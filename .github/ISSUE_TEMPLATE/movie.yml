@@ -1,0 +1,50 @@
+name: 🎬 영화 기록
+description: 본 영화를 기록합니다. 제목은 "영화 제목 (개봉 연도)" 형식으로 적어 주세요.
+body:
+  - type: input
+    id: watched
+    attributes:
+      label: 관람일
+      description: YYYY-MM-DD 형식
+      placeholder: "2026-11-08"
+    validations:
+      required: true
+  - type: textarea
+    id: poster
+    attributes:
+      label: 포스터
+      description: 가로 500px 정도의 세로형 이미지를 붙여넣거나 끌어다 놓으세요. 첫 번째 이미지만 사용합니다. 이미지 URL도 가능합니다.
+    validations:
+      required: true
+  - type: input
+    id: director
+    attributes:
+      label: 감독
+  - type: input
+    id: place
+    attributes:
+      label: 관람 장소
+      placeholder: 극장 / 넷플릭스 / 집
+  - type: dropdown
+    id: rating
+    attributes:
+      label: 별점
+      options:
+        - "★ 5.0"
+        - "★ 4.5"
+        - "★ 4.0"
+        - "★ 3.5"
+        - "★ 3.0"
+        - "★ 2.5"
+        - "★ 2.0"
+        - "★ 1.5"
+        - "★ 1.0"
+        - "★ 0.5"
+  - type: input
+    id: oneliner
+    attributes:
+      label: 한 줄 평
+  - type: textarea
+    id: review
+    attributes:
+      label: 감상
