@@ -19,9 +19,17 @@ Shortcut commands: @AGENTS.md
 2. `gh issue develop {ISSUE_NUMBER} --repo jongfeel/movie-log --checkout`
 3. `node scripts/calendar.mjs add {ISSUE_NUMBER}`
    - 관람일이나 포스터 오류가 나면 멈추고 사용자에게 알린다. 값을 추측하지 않는다.
-4. `git diff`로 `README.md`와 `movies.json`만 바뀌었는지 확인
-5. 커밋: `Add movie: {issue title}`
-6. `git push`
-7. PR 생성: 제목은 커밋과 같고, 본문에 제목, 관람일, `Closes #{ISSUE_NUMBER}`를 적는다. merge는 사용자가 한다.
+4. 본문의 관람일을 issue의 **Start date** field에 넣는다. (issue type은 `Movie`)
+   - issue id: `gh issue view {ISSUE_NUMBER} --repo jongfeel/movie-log --json id --jq .id`
+   - 설정 (`dateValue`는 3번에서 `movies.json`에 기록된 `watched`):
+     ```
+     gh api graphql -f query='mutation{setIssueFieldValue(input:{issueId:"{ISSUE_ID}",issueFields:[{fieldId:"IFD_kgDOAvfIMQ",dateValue:"{YYYY-MM-DD}"}]}){issue{number}}}'
+     ```
+   - 확인: `gh api repos/jongfeel/movie-log/issues/{ISSUE_NUMBER} --jq '{type:.type.name,issue_field_values}'`
+   - 여러 편이면 issue마다 실행한다.
+5. `git diff`로 `README.md`와 `movies.json`만 바뀌었는지 확인
+6. 커밋: `Add movie: {issue title}`
+7. `git push`
+8. PR 생성: 제목은 커밋과 같고, 본문에 제목, 관람일, `Closes #{ISSUE_NUMBER}`를 적는다. merge는 사용자가 한다.
 
 여러 편이면 첫 번째 issue의 브랜치에서 `add 12 13`처럼 한 번에 처리하고, PR 본문에 `Closes #12, closes #13`을 적는다.
