@@ -17,34 +17,19 @@ body:
     validations:
       required: true
   - type: input
-    id: director
-    attributes:
-      label: 감독
-  - type: input
     id: place
     attributes:
       label: 관람 장소
-      placeholder: 극장 / 넷플릭스 / 집
-  - type: dropdown
-    id: rating
-    attributes:
-      label: 별점
-      options:
-        - "★ 5.0"
-        - "★ 4.5"
-        - "★ 4.0"
-        - "★ 3.5"
-        - "★ 3.0"
-        - "★ 2.5"
-        - "★ 2.0"
-        - "★ 1.5"
-        - "★ 1.0"
-        - "★ 0.5"
-  - type: input
-    id: oneliner
-    attributes:
-      label: 한 줄 평
+      placeholder: "멀티플렉스 브랜드(CGV, 롯데시네마, 메가박스, 씨네큐) / 지역(청라, 용산아이파크몰, 인천아시아드)"
   - type: textarea
-    id: review
+    id: title_meaning
     attributes:
-      label: 감상
+      label: 1. 영화 제목의 의미
+  - type: textarea
+    id: poster_reading
+    attributes:
+      label: 2. 영화 포스터 해석
+  - type: textarea
+    id: background
+    attributes:
+      label: 3. 영화 속 배경
