@@ -32,6 +32,6 @@ Shortcut commands: @AGENTS.md
 7. `git push`
 8. PR 생성: 제목은 커밋과 같고, 본문에 제목, 관람일, `Closes #{ISSUE_NUMBER}`를 적는다.
 
-PR은 만들기만 하고 merge하지 않는다. 사용자가 merge를 요청하면(예: `PR #4 merge해줘`) mergeable 상태를 확인한 뒤 `gh pr merge {PR_NUMBER} --repo jongfeel/movie-log --merge`로 merge하고, 연결된 issue가 닫혔는지 확인한다. 원격 작업 브랜치는 GitHub 설정(merge 후 자동 삭제)으로 지워지므로 직접 지우지 않는다.
+PR은 만들기만 하고 merge하지 않는다. 사용자가 merge를 요청하면(예: `PR #4 merge해줘`) mergeable 상태를 확인한 뒤 `gh pr merge {PR_NUMBER} --repo jongfeel/movie-log --merge`로 merge하고, 연결된 issue가 닫혔는지 확인한다. 원격 작업 브랜치는 GitHub 설정(merge 후 자동 삭제)으로 지워지므로 직접 지우지 않는다. 로컬은 `git switch main && git pull --ff-only` 후 `git fetch --prune`을 하고, 작업 브랜치를 `git branch -d {branch}`로 지운다. `-d`가 거부하면 `-D`로 강제 삭제하지 말고 사용자에게 알린다.
 
 여러 편이면 첫 번째 issue의 브랜치에서 `add 12 13`처럼 한 번에 처리하고, PR 본문에 `Closes #12, closes #13`을 적는다.
