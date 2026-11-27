@@ -10,6 +10,20 @@ body:
       placeholder: "2026-11-08"
     validations:
       required: true
+  - type: input
+    id: released
+    attributes:
+      label: 개봉일
+      description: 최초 국내 개봉일, YYYY-MM-DD 형식
+      placeholder: "2015-10-29"
+    validations:
+      required: true
+  - type: input
+    id: rereleased
+    attributes:
+      label: 재개봉일
+      description: 재개봉 상영을 봤을 때만 적어 주세요. YYYY-MM-DD 형식
+      placeholder: "2026-11-11"
   - type: textarea
     id: poster
     attributes:
