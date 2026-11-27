@@ -18,9 +18,9 @@
 
 <!-- calendar:start -->
 
-## 2026 (2편)
+## 2026 (3편)
 
-### 11월 (2편)
+### 11월 (3편)
 
 <table>
 <tr><th width="110">일</th><th width="110">월</th><th width="110">화</th><th width="110">수</th><th width="110">목</th><th width="110">금</th><th width="110">토</th></tr>
@@ -48,7 +48,7 @@
 <td align="center" valign="top">17</td>
 <td align="center" valign="top">18</td>
 <td align="center" valign="top">19</td>
-<td align="center" valign="top">20</td>
+<td align="center" valign="top">20<br><a href="https://github.com/jongfeel/movie-log/issues/5"><img src="https://github.com/user-attachments/assets/d606594f-8c1f-41cc-87ea-f96cb805bab1" width="90" alt="헝거게임 50번째 추첨의 날 (The Hunger Games: Sunrise on the Reaping)"></a></td>
 <td align="center" valign="top">21</td>
 </tr>
 <tr>
