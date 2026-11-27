@@ -54,7 +54,7 @@
 <tr>
 <td align="center" valign="top">22</td>
 <td align="center" valign="top">23</td>
-<td align="center" valign="top">24<br><a href="https://github.com/jongfeel/movie-log/issues/1"><img src="https://github.com/user-attachments/assets/5129c1ef-9dd1-4930-8cc0-fcbd7a11c3e8" width="90" alt="더 랍스터, The Lobster"></a></td>
+<td align="center" valign="top">24<br><a href="https://github.com/jongfeel/movie-log/issues/1"><img src="https://github.com/user-attachments/assets/5129c1ef-9dd1-4930-8cc0-fcbd7a11c3e8" width="90" alt="더 랍스터 (The Lobster)"></a></td>
 <td align="center" valign="top">25<br><a href="https://github.com/jongfeel/movie-log/issues/3"><img src="https://github.com/user-attachments/assets/7e3b9268-539a-43b0-b448-8c2e8ce60dfe" width="90" alt="눈 내리는 여름, 너에게 (Snow in June)"></a></td>
 <td align="center" valign="top">26</td>
 <td align="center" valign="top">27</td>
